@@ -15,6 +15,24 @@
     </script>
     <!-- TikTok Pixel Code End -->
     
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','2324406347952889');
+    fbq('track','PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=2324406347952889&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- Meta Pixel Code End -->
+    
     <!-- TikTok Event Tracking -->
     <script>
     // Track ViewContent event when page loads
@@ -488,7 +506,7 @@
             </div>
         </div>
 
-        <a href="https://cycsrd.mcgo2.com/click" class="claim-button" onclick="trackButtonClick('ClickButton')">
+        <a href="https://cycsrd.mcgo2.com/click" class="claim-button" onclick="trackButtonClick('ClickButton'); fbq('track', 'Lead');">
             Activate $750 Reward →
         </a>
 
@@ -496,7 +514,7 @@
         <form action="https://cycsrd.mcgo2.com/click" method="get" class="cta-form" id="fallback-cta">
             <input type="hidden" name="cb" value="APPLE">
             <input type="hidden" name="t" value="" id="timestamp">
-            <button type="submit" class="cta-form-button" onclick="trackButtonClick('ClickButton')">
+            <button type="submit" class="cta-form-button" onclick="trackButtonClick('ClickButton'); fbq('track', 'Lead');">
                 Activate $750 Reward →
             </button>
         </form>
